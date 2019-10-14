@@ -7,7 +7,7 @@
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
-#include "afxres.h"
+#include "WinResrc.h"
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
@@ -42,7 +42,7 @@ BEGIN
     PUSHBUTTON      "Close",IDCANCEL,264,164,39,11
     CONTROL         "",IDC_CHATAREA_EDIT,"RICHEDIT",TCS_HOTTRACK | TCS_RAGGEDRIGHT | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_VSCROLL | WS_TABSTOP,4,4,300,122,WS_EX_STATICEDGE
     PUSHBUTTON      "",IDOK,303,0,6,6,NOT WS_VISIBLE
-    LTEXT           "",IDC_STATIC_SPLIT,5,127,298,8,SS_NOTIFY
+    LTEXT           "",-1_SPLIT,5,127,298,8,SS_NOTIFY
 END
 
 IDD_LIST_DLG DIALOGEX 0, 0, 288, 123
@@ -53,11 +53,11 @@ FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "Close",IDOK,118,94,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,118,78,50,14,NOT WS_VISIBLE
-    LTEXT           " Currently Connected Clients :",IDC_STATIC,5,4,105,8
+    LTEXT           " Currently Connected Clients :",-1,5,4,105,8
     LISTBOX         IDC_VIEWERS_LISTBOX,7,16,103,93,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
     PUSHBUTTON      "Kill Client",IDC_KILL_B,118,17,50,14
     PUSHBUTTON      "Chat with    Client",IDC_TEXTCHAT_B,118,35,50,22,BS_MULTILINE
-    LTEXT           "Pending Clients:",IDC_STATIC,173,4,105,8
+    LTEXT           "Pending Clients:",-1,173,4,105,8
     LISTBOX         IDC_PENDING_LISTBOX,175,16,103,93,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
 END
 
@@ -73,8 +73,8 @@ BEGIN
     LTEXT           "For more Information and Links please visit: \nhttp://www.uvnc.com",IDC_WWW,74,135,141,19
     LTEXT           "Build:",IDC_BUILDTEXT,74,16,20,10
     LTEXT           "BuildTime",IDC_BUILDTIME,97,16,92,10
-    LTEXT           "Copyright © 2002 RealVNC Ltd. - RealVNC\nCopyright © 1999-2002 Tridia Corporation - TridiaVNC \nCopyright © 1994-2001 AT&&T Laboratories Cambridge/Olivetti Research Ltd. - VNC",IDC_STATIC,74,67,203,32
-    LTEXT           "Copyright © 1990-2002 Info-ZIP\nCopyright © 1996-2002 Markus Franz Xaver Johannes Oberhumer - Mini LZO library",IDC_STATIC,74,99,200,27
+    LTEXT           "Copyright © 2002 RealVNC Ltd. - RealVNC\nCopyright © 1999-2002 Tridia Corporation - TridiaVNC \nCopyright © 1994-2001 AT&&T Laboratories Cambridge/Olivetti Research Ltd. - VNC",-1,74,67,203,32
+    LTEXT           "Copyright © 1990-2002 Info-ZIP\nCopyright © 1996-2002 Markus Franz Xaver Johannes Oberhumer - Mini LZO library",-1,74,99,200,27
 END
 
 IDD_OUTGOING_CONN DIALOGEX 0, 0, 223, 102
@@ -99,9 +99,9 @@ FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
     PUSHBUTTON      "&Accept",IDACCEPT,7,74,53,14
     DEFPUSHBUTTON   "&Reject",IDREJECT,130,74,49,14
-    LTEXT           "WinVNC has received an incoming connection from",IDC_STATIC_TEXT1,7,7,107,36
+    LTEXT           "WinVNC has received an incoming connection from",-1_TEXT1,7,7,107,36
     CTEXT           "<unknown host>",IDC_ACCEPT_IP,5,47,172,9,SS_CENTERIMAGE
-    CTEXT           "Do you wish to Accept or Reject the connection?",IDC_STATIC_TEXT,7,58,172,15,SS_CENTERIMAGE
+    CTEXT           "Do you wish to Accept or Reject the connection?",-1_TEXT,7,58,172,15,SS_CENTERIMAGE
     CTEXT           "AutoReject:",IDC_ACCEPT_TIMEOUT,60,74,70,14,SS_CENTERIMAGE
     CONTROL         139,IDC_ACCEPTLOGO,"Static",SS_BITMAP,130,7,43,39
 END
@@ -126,12 +126,12 @@ BEGIN
     PUSHBUTTON      "&Apply",IDC_APPLY,131,159,43,14
     PUSHBUTTON      "&Cancel",IDCANCEL,177,159,41,14
     EDITTEXT        IDC_MAXCPU,54,133,40,14,ES_AUTOHSCROLL | ES_NUMBER
-    LTEXT           "Max Cpu :",IDC_STATIC,14,134,34,8
-    LTEXT           "Elevated access needed: Service or run as admin",IDC_STATICELEVATED,108,102,107,19
+    LTEXT           "Max Cpu :",-1,14,134,34,8
+    LTEXT           "Elevated access needed: Service or run as admin",-1ELEVATED,108,102,107,19
     CONTROL         "Auto",IDC_AUTOCAPT1,"Button",BS_AUTORADIOBUTTON,105,57,31,10
     CONTROL         "Pixel",IDC_AUTOCAPT2,"Button",BS_AUTORADIOBUTTON,144,57,31,10
     CONTROL         "Blit",IDC_AUTOCAPT3,"Button",BS_AUTORADIOBUTTON,183,57,25,10
-    LTEXT           "Legacy Capture:",IDC_STATIC,14,57,54,8
+    LTEXT           "Legacy Capture:",-1,14,57,54,8
 END
 
 IDD_PROPERTIES1 DIALOGEX 0, 0, 390, 311
@@ -147,9 +147,9 @@ BEGIN
     CONTROL         "Auto",IDC_AUTO_DISPLAY_NO,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,102,39,35,13
     CONTROL         "Ports",IDC_SPECPORT,"Button",BS_AUTORADIOBUTTON,11,54,30,10
     CONTROL         "Auto",IDC_PORTNO_AUTO,"Button",BS_AUTORADIOBUTTON,101,54,31,9
-    RTEXT           "Main:",IDC_STATIC,45,55,18,8
+    RTEXT           "Main:",-1,45,55,18,8
     EDITTEXT        IDC_PORTRFB,66,53,29,12,ES_AUTOHSCROLL
-    RTEXT           "Http:",IDC_STATIC,36,67,27,8
+    RTEXT           "Http:",-1,36,67,27,8
     EDITTEXT        IDC_PORTHTTP,66,65,29,12,ES_AUTOHSCROLL
     CONTROL         "Enable JavaViewer (Http Connect)",IDC_CONNECT_HTTP,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,80,122,10
@@ -159,24 +159,24 @@ BEGIN
     CONTROL         "Do Nothing",IDC_LOCKSETTING_NOTHING,"Button",BS_AUTORADIOBUTTON | WS_GROUP,146,15,80,12
     CONTROL         "Lock Workstation (W2K)",IDC_LOCKSETTING_LOCK,"Button",BS_AUTORADIOBUTTON,146,26,96,13
     CONTROL         "Logoff Workstation",IDC_LOCKSETTING_LOGOFF,"Button",BS_AUTORADIOBUTTON,146,39,80,11
-    GROUPBOX        "Keyboard && Mouse",IDC_STATIC,142,59,103,79,BS_LEFT
+    GROUPBOX        "Keyboard && Mouse",-1,142,59,103,79,BS_LEFT
     CONTROL         "Disable Viewers inputs",IDC_DISABLE_INPUTS,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,150,70,92,10
     CONTROL         "Disable Local inputs",IDC_DISABLE_LOCAL_INPUTS,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,150,83,83,10
     CONTROL         "Alternate keyboard",IDC_JAP_INPUTS,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,150,96,89,10
-    GROUPBOX        "Query on incoming connection",IDC_STATIC,250,3,136,60,BS_LEFT
+    GROUPBOX        "Query on incoming connection",-1,250,3,136,60,BS_LEFT
     CONTROL         "Display Query Window",IDQUERY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,257,15,86,10
-    LTEXT           "Timeout:",IDC_STATIC,257,28,28,8
+    LTEXT           "Timeout:",-1,257,28,28,8
     EDITTEXT        IDQUERYTIMEOUT,287,26,19,12,ES_AUTOHSCROLL
-    LTEXT           "seconds",IDC_STATIC,311,28,29,8
-    LTEXT           "Default action:",IDC_STATIC,257,52,47,8
+    LTEXT           "seconds",-1,311,28,29,8
+    LTEXT           "Default action:",-1,257,52,47,8
     CONTROL         "Refuse",IDC_DREFUSE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,307,52,39,10
     CONTROL         "Accept",IDC_DACCEPT,"Button",BS_AUTORADIOBUTTON,346,52,37,10
-    GROUPBOX        "Multi viewer connections",IDC_STATIC,250,64,136,60,BS_LEFT
+    GROUPBOX        "Multi viewer connections",-1,250,64,136,60,BS_LEFT
     CONTROL         "Disconnect all existing connections",IDC_MV1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,255,71,127,10
     CONTROL         "Keep existing connections",IDC_MV2,"Button",BS_AUTORADIOBUTTON,255,81,104,10
     CONTROL         "Refuse the new connection",IDC_MV3,"Button",BS_AUTORADIOBUTTON,255,92,103,9
     CONTROL         "Refuse all new connection ",IDC_MV4,"Button",BS_AUTORADIOBUTTON,255,103,102,10
-    GROUPBOX        "Authentication",IDC_STATIC,7,139,210,88,BS_LEFT
+    GROUPBOX        "Authentication",-1,7,139,210,88,BS_LEFT
     LTEXT           "VNC Password:",IDC_PASSWORD_LABEL,33,149,50,11,SS_CENTERIMAGE
     EDITTEXT        IDC_PASSWORD,85,148,74,13,ES_PASSWORD | ES_AUTOHSCROLL
     LTEXT           "View-Only Password:",IDC_PASSWORD_LABEL2,14,163,69,11,SS_CENTERIMAGE
@@ -186,7 +186,7 @@ BEGIN
     CONTROL         "New MS Logon (supports multiple domains)",IDC_NEW_MSLOGON,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,202,153,11
     PUSHBUTTON      "Configure MS Logon Groups",IDC_MSLOGON,13,214,195,12
-    GROUPBOX        "Misc.",IDC_STATIC,222,139,164,112,BS_LEFT
+    GROUPBOX        "Misc.",-1,222,139,164,112,BS_LEFT
     CONTROL         "Remove Aero (Vista)",IDC_REMOVE_Aero,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,150,81,10
     CONTROL         "Remove Wallpaper for Viewers",IDC_REMOVE_WALLPAPER,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,161,134,10
@@ -199,33 +199,33 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,228,218,141,10
     CONTROL         "Forbid the user to close down WinVNC",IDC_ALLOWSHUTDOWN,
                     "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,228,229,135,10
-    LTEXT           "Default Server Screen Scale:",IDC_STATIC,237,238,92,8
-    LTEXT           "1 / ",IDC_STATIC,348,238,12,8
+    LTEXT           "Default Server Screen Scale:",-1,237,238,92,8
+    LTEXT           "1 / ",-1,348,238,12,8
     EDITTEXT        IDC_SCALE,363,235,12,12,ES_AUTOHSCROLL
-    GROUPBOX        "File Transfer",IDC_STATIC,6,226,210,25
+    GROUPBOX        "File Transfer",-1,6,226,210,25
     CONTROL         "Enable",IDC_FILETRANSFER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,237,38,10
     CONTROL         "User impersonation (for Service only)",IDC_FTUSERIMPERSONATION_CHECK,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,237,133,10
-    GROUPBOX        "DSM Plugin",IDC_STATIC,5,254,211,32,BS_LEFT
+    GROUPBOX        "DSM Plugin",-1,5,254,211,32,BS_LEFT
     CONTROL         "Use :",IDC_PLUGIN_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,268,31,10
     COMBOBOX        IDC_PLUGINS_COMBO,45,266,129,86,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "Config.",IDC_PLUGIN_BUTTON,179,266,29,12
-    GROUPBOX        "Logging",IDC_STATIC,221,254,165,51
+    GROUPBOX        "Logging",-1,221,254,165,51
     CONTROL         "Log debug infos to the WinVNC.log file",IDC_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,264,139,10
     CONTROL         "Log to video",IDC_VIDEO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,275,58,10
     PUSHBUTTON      "Clear avi encoder",IDC_CLEAR,297,275,75,9
-    LTEXT           "Path:",IDC_STATIC,229,303,18,8
+    LTEXT           "Path:",-1,229,303,18,8
     EDITTEXT        IDC_EDIT_PATH,250,287,132,14,ES_AUTOHSCROLL
     DEFPUSHBUTTON   "&OK",IDOK,32,292,43,14
     PUSHBUTTON      "&Apply",IDC_APPLY,81,292,43,14
     PUSHBUTTON      "&Cancel",IDCANCEL,129,292,44,14
-    RTEXT           "N°",IDC_STATIC,53,42,9,8
+    RTEXT           "N°",-1,53,42,9,8
     CONTROL         "RDPmode",IDC_RDPMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,195,47,10
     CONTROL         "IPv6 mode",IDC_IPV6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,113,50,10
     CONTROL         "win8 keyboardhelper",IDC_WIN8_HELPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,122,83,10
     EDITTEXT        IDC_QUERYDISABLETIME,287,39,19,12,ES_AUTOHSCROLL
-    LTEXT           "Delay:",IDC_STATIC,263,41,22,8
-    LTEXT           "sec. after restart.",IDC_STATIC,311,41,59,8
+    LTEXT           "Delay:",-1,263,41,22,8
+    LTEXT           "sec. after restart.",-1,311,41,59,8
     CONTROL         "save password more secure (not portable)",IDC_SAVEPASSWORDSECURE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,178,174,10
     CONTROL         "International keys",IDC_UNICODE_INPUTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,109,74,10
@@ -603,10 +603,10 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION "MS logon setup"
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "",IDC_STATIC,5,0,178,74
-    LTEXT           "Group",IDC_STATIC,23,8,20,8
-    LTEXT           "Local",IDC_STATIC,127,8,18,8
-    LTEXT           "Domain",IDC_STATIC,153,8,25,8
+    GROUPBOX        "",-1,5,0,178,74
+    LTEXT           "Group",-1,23,8,20,8
+    LTEXT           "Local",-1,127,8,18,8
+    LTEXT           "Domain",-1,153,8,25,8
     EDITTEXT        IDC_GROUP1,21,19,93,13,ES_AUTOHSCROLL
     CONTROL         "",IDC_CHECKG1L,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,20,13,10
     CONTROL         "",IDC_CHECKG1D,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,22,16,8
@@ -616,14 +616,14 @@ BEGIN
     EDITTEXT        IDC_GROUP3,21,53,93,13,ES_AUTOHSCROLL
     CONTROL         "",IDC_CHECKG3L,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,56,16,8
     CONTROL         "",IDC_CHECKG3D,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,56,16,8
-    GROUPBOX        "Rules",IDC_STATIC,5,77,178,68
-    LTEXT           "Group 1, 2 = Full Access       Group 3 = Read Only",IDC_STATIC,16,88,162,8
-    LTEXT           "Must be run as a Service on NT4, W2K\nCan be run as a Service or Application on XP, W2003\nLocal admins have always access.\nFor NT4 and W2K in Application mode you need to add the Local Admin Group.",IDC_STATIC,8,100,174,41
+    GROUPBOX        "Rules",-1,5,77,178,68
+    LTEXT           "Group 1, 2 = Full Access       Group 3 = Read Only",-1,16,88,162,8
+    LTEXT           "Must be run as a Service on NT4, W2K\nCan be run as a Service or Application on XP, W2003\nLocal admins have always access.\nFor NT4 and W2K in Application mode you need to add the Local Admin Group.",-1,8,100,174,41
     DEFPUSHBUTTON   "OK",IDOK,77,148,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,132,148,50,14
-    LTEXT           "1",IDC_STATIC,11,22,8,8
-    LTEXT           "2",IDC_STATIC,11,38,8,8
-    LTEXT           "3",IDC_STATIC,11,56,8,8
+    LTEXT           "1",-1,11,22,8,8
+    LTEXT           "2",-1,11,38,8,8
+    LTEXT           "3",-1,11,56,8,8
 END
 
 
